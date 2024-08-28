@@ -1,0 +1,9 @@
+.board {
+    display: grid; /* Definimos un grid para organizar las celdas */
+    grid-template-columns: repeat(3, 1fr); /* Creamos 3 columnas iguales */
+    gap: 10px; /* Espacio entre las celdas */
+    width: 90vw; /* El ancho ocupa el 90% del viewport */
+    max-width: 500px; /* Ancho máximo para pantallas grandes */
+    aspect-ratio: 1 / 1; /* Mantiene la proporción cuadrada */
+    padding: 10px; /* Espacio interno alrededor del tablero */
+}

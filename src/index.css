@@ -1,0 +1,103 @@
+/* Fuentes para el proyecto */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Texto juegos */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Comfortaa', sans-serif; */
+
+/* Cabecera y overlay */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+/* font-family: 'Luckiest Guy', cursive; */
+
+/* Reseteo de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Nunito", sans-serif; */
+  /* font-family: 'Comfortaa', sans-serif; */
+  font-family: 'Luckiest Guy', cursive;
+  font-optical-sizing: auto;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Definición de variables */
+:root {
+    /* Colors */
+    --mgc-primary-color: #fcf4e3;
+    --mgc-secondary-color: #404040;
+    --mgc-tertiary-color: #ff9900;
+    --mgc-quaternary-color: #f432cd;
+
+    --mgc-light-color: var(--mgc-primary-color);
+    --mgc-dark-color: var(--mgc-secondary-color);
+    --mgc-orange: var(--mgc-tertiary-color);
+    --mgc-fuchsia: var(--mgc-quaternary-color);
+  
+    /* SPACINGS */
+    /* Margins */
+    --mgc-margin-s: 5px;
+    --mgc-margin-m: 10px;
+    --mgc-margin-l: 20px;
+    --mgc-margin-xl: 40px;
+    
+    /* Paddings */
+    --mgc-padding-s: 5px;
+    --mgc-padding-m: 10px;
+    --mgc-padding-l: 20px;
+    --mgc-padding-xl: 40px;
+  
+    /* Gaps */
+    --mgc-gap-s: 5px;
+    --mgc-gap-m: 10px;
+    --mgc-gap-l: 20px;
+    --mgc-gap-xl: 50px;
+  
+    /* Radius */
+    --mgc-radius-xs: 5px;
+    --mgc-radius-s: 10px;
+    --mgc-radius-m: 20px;
+    --mgc-radius-l: 30px;
+    --mgc-radius-xl: 40px;
+  
+    /* Font sizes */
+    --mgc-font-size-xs: 12px;
+    --mgc-font-size-s: clamp(0.7rem, 0.15vw + 0.65rem, 0,9rem);
+    --mgc-font-size-base: clamp(1rem, 0.40vw + 0.9rem, 1.2rem);
+    --mgc-font-size-l: clamp(1.5rem, 1vw + 1.2rem, 2rem);
+    --mgc-font-size-xl: clamp(2.5rem, 2.8rem, 3.5rem);
+}
+
+/* Contenedor de los tableros */
+.game-container {
+  width: 100%;
+  height: 80svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--mgc-gap-l);
+}
+
+/* Título de los juegos */
+.game-container .game-title {
+  height: 10svh;
+  font-size: var(--mgc-font-size-xl);
+}
+
+/* MEDIA QUERIES */
+/* Estilos para tablets en modo paisaje y laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* Estilos para smartphones grandes y tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+
+/* Estilos para smartphones pequeños */
+@media only screen and (max-width: 480px) {
+}

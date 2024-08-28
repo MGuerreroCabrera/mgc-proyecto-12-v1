@@ -1,0 +1,27 @@
+footer {
+    width: 100%;
+    height: 10dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: var(--mgc-padding-l);
+    border-top-left-radius: var(--mgc-radius-xl);
+    border-top-right-radius: var(--mgc-radius-xl);
+  }
+
+  footer > p.light {
+    color: var(--mgc-light-color);
+    background-color: var(--mgc-dark-color);
+  }
+
+  footer > p.dark {
+    color: var(--mgc-dark-color);
+    background-color: var(--mgc-light-color);
+  }

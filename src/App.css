@@ -1,0 +1,26 @@
+header {
+  width: 100%;
+  height: 10dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--mgc-gap-m);
+  position: relative;
+}
+
+main {
+  width: 100%;
+  min-height: 80dvh;
+}
+
+.light {
+  background-color: var(--mgc-light-color);
+  color: var(--mgc-dark-color);
+  transition: all 1s;
+}
+
+.dark {
+  background-color: var(--mgc-dark-color);
+  color: var(--mgc-light-color);
+  transition: all 1s;
+}

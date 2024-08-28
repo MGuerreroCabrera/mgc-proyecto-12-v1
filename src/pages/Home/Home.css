@@ -1,0 +1,80 @@
+#home-container {
+    width: 100%;
+    height: 80dvh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--mgc-gap-xl);
+}
+
+.title-container {
+    max-width: 30%;
+}
+
+.form-gamer-name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 2px 5px 30px -3px rgba(107,107,107,0.7); 
+    box-shadow: 2px 5px 30px -3px rgba(107,107,107,0.7);
+    gap: var(--mgc-gap-l);
+    border-radius: var(--mgc-radius-m);
+    padding: var(--mgc-padding-xl);
+}
+
+.form-wrpr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--mgc-gap-l);
+}
+
+.gamer-name-input {
+    width: 100%;
+    border: none;
+    background-color: antiquewhite;
+    padding: var(--mgc-padding-m);
+}
+
+/* Estilos para quitar el outline en el focus */
+.gamer-name-input:focus {
+    outline: none;
+}
+
+.gamer-name-input.light {
+    border-bottom: 2px solid var(--mgc-dark-color);
+}
+
+.gamer-name-input.dark {
+    color: var(--mgc-dark-color);
+    border-bottom: 2px solid var(--mgc-light-color);
+}
+
+.gamer-name-input::placeholder {
+    color: red;
+}
+
+.error-msg {
+    color: red;
+}
+
+button {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: var(--mgc-padding-s);
+}
+
+button.light {    
+    color: var(--mgc-light-color);
+    background-color: var(--mgc-dark-color);
+}
+
+button.dark {    
+    color: var(--mgc-dark-color);
+    background-color: var(--mgc-light-color);
+}

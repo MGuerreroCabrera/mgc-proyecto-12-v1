@@ -1,0 +1,25 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--mgc-gap-l);
+}
+  
+.message h2 {
+    font-size: var(--mgc-font-size-l);
+}
+
+.bt-message {
+    font-size: var(--mgc-font-size-l);
+}
+
+.bt-message.light {
+    color: var(--mgc-dark-color);
+    background-color: var(--mgc-light-color);
+}
+
+.bt-message.dark {
+    color: var(--mgc-light-color);
+    background-color: var(--mgc-dark-color);
+}

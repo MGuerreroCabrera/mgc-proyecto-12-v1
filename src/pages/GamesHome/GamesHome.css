@@ -1,0 +1,51 @@
+#games-home-container {
+    width: 100%;
+    min-height: 80svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: var(--mgc-padding-m);
+    gap: var(--mgc-gap-l);
+}
+
+#games-home-container > h2 {
+    height: auto;
+    font-size: var(--mgc-font-size-xl);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--mgc-gap-xl);
+}
+
+.card {
+    width: 30%;
+    min-width: 300px;
+    height: 30%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 240, 240, 0.42);
+    outline: 1px solid white;
+    border-radius: var(--mgc-radius-s);
+    gap: var(--mgc-gap-l);
+}
+
+.card > h3 {
+    font-size: var(--mgc-font-size-l);
+}
+.card > p {
+    font-size: var(--mgc-font-size-xl);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card > p:hover {
+    transform: scale(1.2);
+}
