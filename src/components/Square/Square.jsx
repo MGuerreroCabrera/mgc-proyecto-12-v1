@@ -8,10 +8,7 @@ const Square = ({ value, onClick }) => {
   const { themeContext } = useThemeContext();
 
   return (
-    // Renderizamos un botón que representa la casilla del tablero
-    // <button className={`square ${themeContext}`} onClick={onClick}>
-    //   {value}
-    // </button>
+    // Renderizar un botón que representa la casilla del tablero
     <div className={`square ${themeContext}`} onClick={onClick}>
       <p>{value}</p>
     </div>

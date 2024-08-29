@@ -1,0 +1,44 @@
+.memory-card {
+    background-color: var(--mgc-front-card);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1; 
+    width: 100%; 
+    max-width: 200px; 
+    flex: 1 1 auto;
+}
+
+.memory-card.flipped {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+.emoji {
+    font-size: var(--mgc-font-size-xl);
+}
+
+/* MEDIA QUERIES */
+/* Estilos para tablets en modo paisaje y laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* Estilos para smartphones grandes y tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+
+/* Estilos para smartphones pequeños */
+@media only screen and (max-width: 480px) {
+    .memory-card {
+        max-width: 100px;
+    }
+}

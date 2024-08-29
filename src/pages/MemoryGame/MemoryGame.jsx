@@ -1,8 +1,12 @@
+
 import "./MemoryGame.css";
+import MemoryBoard from "../../components/MemoryBoard/MemoryBoard";
 
 const MemoryGame = () => {
   return (
-    <div>MemoryGame</div>
+    <div className="game-container">
+      <MemoryBoard />
+    </div>    
   )
 }
 

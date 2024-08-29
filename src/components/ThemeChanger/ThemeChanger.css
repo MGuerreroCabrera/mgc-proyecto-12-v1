@@ -5,29 +5,24 @@
     height: 10dvh;
     gap: var(--mgc-gap-s);
     position: absolute;
-    right: 20px;
+    top: 0;
+    right: 20px;    
 }
 
 
 /* MEDIA QUERIES */
 /* Estilos para tablets en modo paisaje y laptops */
 @media only screen and (min-width<= 769px) and (max-width >= 1024px) {
-    #theme-changer {
-        top: 0px;
-    }
 }
 
 /* Estilos para smartphones grandes y tablets */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    #theme-changer {
-        bottom: 0px;
-    }    
+@media only screen and (min-width: 481px) and (max-width: 768px) {    
 }
 
 
 /* Estilos para smartphones pequeños */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
     #theme-changer {
-        /* display: none;*/
+        display: none;
     }    
 }

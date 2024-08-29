@@ -1,0 +1,28 @@
+.memory-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* MEDIA QUERIES */
+/* Estilos para tablets en modo paisaje y laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* Estilos para smartphones grandes y tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+
+/* Estilos para smartphones pequeños */
+@media only screen and (max-width: 480px) {
+    .memory-board {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        margin: 10px auto;
+    }
+}

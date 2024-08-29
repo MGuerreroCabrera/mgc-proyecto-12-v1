@@ -10,13 +10,13 @@ import Message from "../Message/Message";
 const TicTacToeGame = () => {
   const [state, dispatch] = useReducer(TicTacToeReducer, initialState);
 
-  // Usamos useMemo para calcular el ganador solo cuando el tablero cambie
+  // Uso de useMemo para calcular el ganador solo cuando el tablero cambie
   const winner = useMemo(() => calculateWinner(state.board), [state.board]);
 
-  // Efecto para manejar el fin del juego (ganador o empate)
+  // Efecto para manejar el fin del juego ( ganador o empate )
   useEffect(() => {
     if (winner) {
-      // Si hay un ganador, lo establecemos en el estado
+      // Modificar el estado winner si hay ganador
       dispatch({ type: 'SET_WINNER', winner });
     } else if (!state.board.includes(null)) {
       // Si no hay más movimientos posibles, es un empate
@@ -47,8 +47,8 @@ const TicTacToeGame = () => {
           <Board squares={state.board} onClick={handleClick} />
         ) : (
           <Message
-            winner={state.winner}
-            onReset={() => dispatch({ type: 'RESET' })}
+            winner = {state.winner}
+            onReset = {() => dispatch({ type: 'RESET' })}
           />
         )}
       </>

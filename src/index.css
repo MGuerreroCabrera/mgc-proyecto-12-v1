@@ -28,12 +28,12 @@
     --mgc-primary-color: #fcf4e3;
     --mgc-secondary-color: #404040;
     --mgc-tertiary-color: #ff9900;
-    --mgc-quaternary-color: #f432cd;
+    --mgc-quaternary-color: #f4f4f4;
 
     --mgc-light-color: var(--mgc-primary-color);
     --mgc-dark-color: var(--mgc-secondary-color);
     --mgc-orange: var(--mgc-tertiary-color);
-    --mgc-fuchsia: var(--mgc-quaternary-color);
+    --mgc-front-card: var(--mgc-quaternary-color);
   
     /* SPACINGS */
     /* Margins */
@@ -72,7 +72,7 @@
 /* Contenedor de los tableros */
 .game-container {
   width: 100%;
-  height: 80svh;
+  min-height: 80svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,7 +81,7 @@
 }
 
 /* Título de los juegos */
-.game-container .game-title {
+.game-container.game-title {
   height: 10svh;
   font-size: var(--mgc-font-size-xl);
 }

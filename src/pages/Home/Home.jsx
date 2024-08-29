@@ -20,18 +20,16 @@ const Home = () => {
   // Importar el hook useNavigate para dirigir al usuario a la página principal de selección de juegos
   const navigate = useNavigate();
 
-  // Crear función que se ejecutará al hacer submit del formulario
+  // Función que se ejecuta al hacer submit del formulario
   const submit = (data) => {
-    //console.log(data.gamername)
     setGamerName(data.gamername);
     navigate("./gameshome");
-    // showConfetti();
   }
 
   return (
     <div id="home-container">
       <div className="title-container">
-        <h1>Bienvenid@ al salón de juegos Gaming Room { gamerName }</h1>
+        <h1>Bienvenid@ al salón de juegos Diverty Room { gamerName }</h1>
       </div>
       <div className="form-gamer-name-container">
         <h2>Introduce los datos</h2>

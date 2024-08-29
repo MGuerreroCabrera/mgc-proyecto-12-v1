@@ -1,0 +1,26 @@
+.message-container {
+    width: 100%;
+    height: 80svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: var(--mgc-gap-xl);
+    padding: var(--mgc-padding-xl);
+}
+
+.message-container > p {
+    text-align: center;
+    font-size: var(--mgc-font-size-l);
+    padding: var(--mgc-padding-l);
+    border-radius: var(--mgc-radius-l);
+}
+
+.message-container > p.light {
+    border: 1px solid var(--mgc-dark-color);
+}
+
+.message-container > p.dark {
+    border: 1px solid var(--mgc-light-color);
+}
